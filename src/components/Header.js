@@ -1,7 +1,15 @@
 import React from 'react';
+import './Header.css';
+import ruinLogo from "../assets/header/logo.jpeg";
 
 const Header = () => {
-  return <h2>I am the header</h2>
+  return (
+    <div className="header">
+      <div className="logoContainer">
+          <img src={ruinLogo} className="ruinLogo" alt=""/>
+      </div>
+    </div>
+  )
 };
 
 export default Header;
