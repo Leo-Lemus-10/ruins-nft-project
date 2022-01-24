@@ -1,7 +1,8 @@
 import React from 'react';
 import './Header.css';
 import ruinLogo from "../assets/header/logo.jpeg";
-import searchIcon from "../assets/header/search.png"
+import searchIcon from "../assets/header/search.png";
+import themeSwitchIcon from "../assets/header/theme-switch.png"
 
 const Header = () => {
   return (
@@ -19,6 +20,11 @@ const Header = () => {
             <p>Drops</p>
             <p>Marketplace</p>
             <p>Create</p>
+        </div>
+        <div className="headerActions">
+            <div className="themeSwitchContainer">
+                <img src={themeSwitchIcon} alt=""/>
+            </div>
         </div>
     </div>
   )
