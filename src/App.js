@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import Header from './components/Header';
 import CollectionCard from './components/CollectionCard';
+import { useState, useEffect} from 'react';
 
 function App() {
   return (
