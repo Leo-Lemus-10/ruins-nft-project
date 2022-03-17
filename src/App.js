@@ -5,6 +5,7 @@ import CollectionCard from './components/CollectionCard';
 import { useState, useEffect} from 'react';
 import axios from 'axios';
 import RuinList from './components/RuinList';
+import Main from './components/Main';
 
 function App() {
   const [ruinListData, setRuinListData] = useState([])
@@ -19,6 +20,7 @@ function App() {
   return (
     <div className="app">
       <Header/>
+      <Main />
       <RuinList ruinListData={ruinListData}/>
     </div>
   );
